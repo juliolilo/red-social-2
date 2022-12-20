@@ -24,7 +24,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath, isTrue }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `http://localhost:3001/users/${_id}/${friendId}`,
+      `https://red-social-2-frontend-4u38.vercel.app/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {
